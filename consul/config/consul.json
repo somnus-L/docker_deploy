@@ -1,0 +1,11 @@
+{
+        "ui": true,
+        "server": true,
+        "log_level" : "INFO",
+        "node_name": "master",
+        "datacenter": "self_consul",
+        "bootstrap_expect": 1,
+        "bind_addr": "127.0.0.1",
+        "client_addr": "0.0.0.0",
+        "data_dir": "/consul/data"
+}

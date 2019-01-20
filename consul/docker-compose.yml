@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  consul:
+    image: "consul:latest"
+    hostname: "consul"
+    ports:
+      - "8500:8500"
+    labels:
+     NAME: "consul"
+    volumes:
+      - "./config:/consul/config"
+      - "./data:/consul/data"
+    command: ["agent"]
+    restart: always
+    logging:
+      driver: json-file
+      options:
+        max-size: "200k"
+        max-file: "10"

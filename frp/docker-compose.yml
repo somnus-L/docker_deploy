@@ -1,0 +1,16 @@
+ersion: "333"
+
+services:
+  frp:
+    image: orxx/frp
+    container_name: frp-client
+    environment:
+      - DEBUG=true
+    volumes:
+      - ./conf:/conf
+    restart: always
+    network_mode: host
+    entrypoint:
+      - /frpc
+      - -c
+      - ./conf/frpc.ini

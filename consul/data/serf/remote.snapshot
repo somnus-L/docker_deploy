@@ -1,0 +1,3 @@
+alive: master.followme 127.0.0.1:8302
+alive: master.followme 127.0.0.1:8302
+alive: master.self_consul 127.0.0.1:8302
