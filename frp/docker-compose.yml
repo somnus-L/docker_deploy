@@ -2,7 +2,8 @@ ersion: "333"
 
 services:
   frp:
-    image: orxx/frp
+    image: hyperapp/frp
+
     container_name: frp-client
     environment:
       - DEBUG=true
